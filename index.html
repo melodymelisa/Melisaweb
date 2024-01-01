@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO -->
+    <meta name="description" content="Melisa Melody, Data Analyst specializing in Cloud Computing and Kubernetes. Leveraging cloud infrastructure for data analytics and building scalable data solutions.">
+    <meta name="author" content="Melisa Melody">
+    <meta name="url" content="https://melodymelisa.github.io">
+    <meta name="copyright" content="Melisa Melody">
+    <meta name="robots" content="index,follow">
+    <title>Melisa Melody ~ Data Analyst | Cloud & Kubernetes</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon/fav.png">
+    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png" />
+    <!-- All CSS Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/plugin.css" />
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- New Layout Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="css/modern-theme.css" />
+    <!-- Matrix Canvas Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/matrix.css" />
+    <!-- Google Web Fonts  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description"
+        content='Melisa Melody is a Data Analyst specializing in Cloud Computing and Kubernetes. Leveraging cloud infrastructure for data analytics and building scalable data solutions.'>
+    <meta name="twitter:card" content='images/favicon/fav.png'>
+    <meta name="twitter:site" content="https://github.com/melodymelisa">
+    <meta name="twitter:title" content="Melisa Melody - Data Analyst | Cloud & Kubernetes">
+    <meta name="twitter:description"
+        content='Data Analyst specializing in Data Analysis, Cloud Computing, Kubernetes, Python, R, SQL, and Machine Learning. Active open source contributor.'>
+    <meta name="twitter:creator" content="https://github.com/melodymelisa">
+    <meta name="twitter:image" content="images/favicon/fav.png">
+    <meta name="twitter:domain" content="https://github.com/melodymelisa">
+    <meta name="keywords"
+        content="Melisa Melody, Data Analyst, Data Analysis, Python, R, SQL, Kubernetes, Docker, AWS, Azure, GCP, Cloud Analytics, Machine Learning, Open Source">
+</head>
+
+<body onload="initializeProfile();">
+    <!--Matrix Canvas Background-->
+    <canvas id="c" class="matrix"></canvas>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <h1 class="name-text" id="profile-name">Melisa Melody</h1>
+            <h2 class="role-text" id="profile-title">Data Analyst</h2>
+            <div class="location-text" id="profile-location"></div>
+            
+            <!-- Social Links -->
+            <div class="social-group" id="social-links">
+                <a href="#" target="_blank" class="social-ico github" id="github-link" style="display: none;" title="GitHub">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="#" target="_blank" class="social-ico linkedin" id="linkedin-link" style="display: none;" title="LinkedIn">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" class="social-ico medium" id="medium-link" style="display: none;" title="Medium">
+                    <i class="fa fa-medium"></i>
+                </a>
+                <a href="#" target="_blank" class="social-ico twitter" id="twitter-link" style="display: none;" title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank" class="social-ico email" id="email-link" style="display: none;" title="Email">
+                    <i class="fa fa-envelope-o"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-sections">
+            <!-- Education & Experience -->
+            <div class="info-row">
+                <div class="info-block edu-block">
+                    <div class="block-header">
+                        <i class="fa fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="block-content">
+                        <p class="status-text" id="education-status">Professional</p>
+                        <p class="main-text" id="education-institution">Data Analysis</p>
+                        <p class="detail-text" id="education-degree">Data Analysis</p>
+                    </div>
+                </div>
+
+                <div class="info-block exp-block" id="experience-section" style="display: none;">
+                    <div class="block-header">
+                        <i class="fa fa-briefcase"></i>
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="block-content">
+                        <p class="exp-num" id="experience-display"></p>
+                        <p class="exp-text">Years in Data Analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <section class="content-block skills-block">
+                <div class="block-header">
+                    <i class="fa fa-bar-chart"></i>
+                    <h3>Skills & Technologies</h3>
+                </div>
+                <div class="block-content">
+                    <div class="skills-list" id="skills-container">
+                        <!-- Skills will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Open Source Section -->
+            <section class="content-block opensource-block" id="opensource-section" style="display: none;">
+                <div class="block-header">
+                    <i class="fa fa-github-alt"></i>
+                    <h3>Open Source Contributions</h3>
+                </div>
+                <div class="block-content">
+                    <p class="desc-text" id="opensource-description"></p>
+                    <div class="projects-list" id="projects-container">
+                        <!-- Projects will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interests Section -->
+            <section class="content-block interests-block">
+                <div class="block-header">
+                    <i class="fa fa-heart"></i>
+                    <h3>Interests</h3>
+                </div>
+                <div class="block-content">
+                    <div class="interests-list" id="interests-container">
+                        <!-- Interests will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- All Javascript Plugins  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugin.js"></script>
+    <!-- Profile Configuration -->
+    <script type="text/javascript" src="js/config.js"></script>
+    <!-- Main Javascript File  -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
